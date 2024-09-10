@@ -3,6 +3,7 @@ const titulo = document.getElementById('titulo');
 const paragrafo = document.getElementById('paragrafo');
 const botao = document.getElementById('botao');
 const toggleBotao = document.getElementById('toggleBotao');
+const addBotao = document.getElementById('addBotao');
 
 // Alterando o texto do título
 titulo.textContent = 'Título alterado';
@@ -33,6 +34,14 @@ toggleBotao.addEventListener('click', () => {
     paragrafo.classList.toggle('hidden');
 });
 
+// Adicionando um evento de clique ao botão de adicionar
+addBotao.addEventListener('click', () => {
+    const novoParagrafo = document.createElement('p');
+    novoParagrafo.textContent = 'Este é um novo parágrafo.';
+    novoParagrafo.style.color = 'blue';
+    document.body.appendChild(novoParagrafo);
+});
+
 // Manipulando eventos de mouse
 titulo.addEventListener('mouseover', () => {
     titulo.classList.add('highlight');
@@ -51,3 +60,4 @@ document.addEventListener('keydown', (event) => {
 
 // Manipulando atributos de elementos
 titulo.setAttribute('title', 'Passe o mouse sobre este título');
+

@@ -7,3 +7,5 @@ Add and remove elements from the DOM.
 Modify attributes of HTML elements.
 Dynamically style elements.
 Respond to user events.
+
+Technologies used: javascript, html and css
